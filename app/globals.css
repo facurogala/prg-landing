@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+body {
+  @apply text-white bg-black;
+  font-family: var(--font-roboto), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bebas-neue), sans-serif;
+}
+
+.cssbuttons-io {
+  padding: 17px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.5s ease, transform 0.3s ease;
+  color: black;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-bebas-neue), sans-serif;
+}
+
+.cssbuttons-io:hover {
+  letter-spacing: 3px;
+  background-color: #DBFF00;
+  color: black;
+  box-shadow: rgb(219 255 0 / 30%) 0px 7px 29px 0px;
+  transform: scale(1.05);
+}
+
+.cssbuttons-io:active {
+  letter-spacing: 3px;
+  background-color: #DBFF00;
+  color: black;
+  box-shadow: rgb(219 255 0 / 30%) 0px 0px 0px 0px;
+  transform: scale(1.05) translateY(10px);
+  transition: 100ms;
+}
+
+.card a:active {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.card a svg {
+  transition: all 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.card a:hover svg:first-child {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+
+.card a:hover svg:last-child {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
