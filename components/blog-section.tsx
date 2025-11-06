@@ -7,6 +7,17 @@ import { Calendar, User, ArrowRight } from "lucide-react"
 
 const blogPosts = [
   {
+    id: 2,
+    title: "Leverage: Capitalizar PRs y Hacer Singles un Hábito",
+    excerpt: "No sobrepensar ni sobre festejar kg nuevos. Aprende a hacer de los singles pesados un hábito cotidiano.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yfyfaUP7z1lIsBtByZLtpLaZnLU1Sq.png",
+    date: "2025-01-15",
+    author: "PRG Coaching",
+    category: "Entrenamiento",
+    slug: "leverage-capitalizar-prs-singles-habito-powerlifting",
+    keywords: ["singles powerlifting", "PRs powerlifting", "entrenamiento pesado", "leverage powerlifting"],
+  },
+  {
     id: 1,
     title: "Sentadilla: Starter pack 2025",
     excerpt: "Abordaje correcto de la tecnica de sentadilla.",
@@ -37,7 +48,7 @@ export function BlogSection() {
         </motion.div>
 
         <div className="flex justify-center">
-          <div className="max-w-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
             {blogPosts.map((post, index) => (
               <motion.article
                 key={post.id}

@@ -19,7 +19,7 @@ export function AboutSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/prg%20out-19xQcj1l8OHK8UgGnmqxPF4Fwpkgro.png"
+                src="/images/design-mode/prg%20out.png"
                 alt="PRG Coaching - Powerlifting training"
                 fill
                 className="object-cover object-center rounded-lg"
