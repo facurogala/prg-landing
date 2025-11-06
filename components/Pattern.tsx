@@ -183,4 +183,3 @@ const Pattern = () => {
 }
 
 export default Pattern;
-

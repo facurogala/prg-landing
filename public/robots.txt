@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prg-coaching.vercel.app/sitemap.xml

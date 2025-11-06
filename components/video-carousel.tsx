@@ -1,71 +1,61 @@
-'use client'
+"use client"
 
-import React, { useRef, useEffect } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import React, { useRef } from "react"
+import useEmblaCarousel from "embla-carousel-react"
+import Autoplay from "embla-carousel-autoplay"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const videos = [
   {
+    id: "OWZ8-2yBAw8",
+    title: "Descargo Gyms Mal Diseñados y Mi Pasado en CrossFit",
+  },
+  {
+    id: "g43NL5TUYAg",
+    title: "One Man vs Sunday Night - 230 Raw - 160 Bench",
+  },
+  {
+    id: "mgNcAy5UBOc",
+    title: "Video de Entrenamiento PRG",
+  },
+  {
+    id: "JQlti6uOxZg",
+    title: "Contenido de Powerlifting PRG",
+  },
+  {
     id: "SstiLyPvj3E",
-    title: "Peso Muerto y Banco, Sin Glamour"
+    title: "Peso Muerto y Banco, Sin Glamour",
   },
   {
     id: "99FCtA-kFz8",
-    title: "El tapering se pierde post compe ??"
-  },
-  {
-    id: "IN3zLUQN49E",
-    title: "Video 3"
-  },
-  {
-    id: "4DKV3JaVNpk",
-    title: "Video 4"
+    title: "El tapering se pierde post compe ??",
   },
   {
     id: "qbq0xHOrqhY",
-    title: "SQUATING YOUR MOM"
+    title: "SQUATING YOUR MOM",
   },
   {
     id: "Zde7WQ297h8",
-    title: "Julio - Fin de bloque con mas 66kg"
+    title: "Julio - Fin de bloque con mas 66kg",
   },
-  {
-    id: "b1G99elvYAk",
-    title: "Video 7"
-  },
-  {
-    id: "2HDsbK3PeD8",
-    title: "Video 8"
-  },
-  {
-    id: "A3_nggpSymE",
-    title: "Video 9"
-  },
-  {
-    id: "-igXOwXrITo",
-    title: "Video 10"
-  }
 ]
 
 export function VideoCarousel() {
-  const autoplay = useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: false })
-  )
+  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }))
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
+    {
       loop: true,
-      align: 'start',
+      align: "start",
       skipSnaps: false,
       slidesToScroll: 1,
       breakpoints: {
-        '(min-width: 640px)': { slidesToScroll: 2 },
-        '(min-width: 1024px)': { slidesToScroll: 3 }
-      }
-    }, 
-    [autoplay.current]
+        "(min-width: 640px)": { slidesToScroll: 2 },
+        "(min-width: 1024px)": { slidesToScroll: 3 },
+      },
+    },
+    [autoplay.current],
   )
 
   const scrollPrev = React.useCallback(() => {
@@ -95,14 +85,14 @@ export function VideoCarousel() {
           ))}
         </div>
       </div>
-      <Button 
+      <Button
         onClick={scrollPrev}
         className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white rounded-full p-2 z-10"
         aria-label="Previous video"
       >
         <ChevronLeft className="h-8 w-8" />
       </Button>
-      <Button 
+      <Button
         onClick={scrollNext}
         className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white rounded-full p-2 z-10"
         aria-label="Next video"
@@ -112,4 +102,3 @@ export function VideoCarousel() {
     </div>
   )
 }
-

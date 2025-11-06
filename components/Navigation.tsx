@@ -38,4 +38,3 @@ export function Navigation({ items }: NavigationProps) {
     </div>
   )
 }
-

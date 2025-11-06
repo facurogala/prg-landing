@@ -1,26 +1,26 @@
-import Image from 'next/image'
+import Image from "next/image"
 
 const socialLinks = [
   {
-    name: 'Steam',
-    url: 'https://steamcommunity.com/profiles/76561198082904943',
-    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/steam-79DVkuGHhwHFM7cZaJxlKghGnniKbw.png'
+    name: "Steam",
+    url: "https://steamcommunity.com/profiles/76561198082904943",
+    icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/steam-79DVkuGHhwHFM7cZaJxlKghGnniKbw.png",
   },
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/faccugram_gordogoodlifter/',
-    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ig-h5tlSh82NQWoY9iwlAoPw9Zc2YRmPD.png'
+    name: "Instagram",
+    url: "https://www.instagram.com/faccugram_gordogoodlifter/",
+    icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ig-h5tlSh82NQWoY9iwlAoPw9Zc2YRmPD.png",
   },
   {
-    name: 'YouTube',
-    url: 'https://www.youtube.com/@prgenerator',
-    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yt-k8lF40Z5krGK4a4DC6Zba8vIEjP4sM.png'
+    name: "YouTube",
+    url: "https://www.youtube.com/@prgenerator",
+    icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yt-k8lF40Z5krGK4a4DC6Zba8vIEjP4sM.png",
   },
   {
-    name: 'Open Powerlifting',
-    url: 'https://www.openpowerlifting.org/u/facundocataldorogala',
-    icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/open-45sTwIboZar3oHFKpTrSRsFo9a2NiB.png'
-  }
+    name: "Open Powerlifting",
+    url: "https://www.openpowerlifting.org/u/facundocataldorogala",
+    icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/open-45sTwIboZar3oHFKpTrSRsFo9a2NiB.png",
+  },
 ]
 
 export function Footer() {
@@ -28,9 +28,7 @@ export function Footer() {
     <footer id="contacto" className="relative bg-black text-white py-12 sm:py-16 w-full overflow-hidden">
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
         <div id="redes" className="text-center mb-16 relative">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
-            Seguime en Redes
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">Seguime en Redes</h2>
           <div className="flex flex-wrap justify-center gap-8 md:gap-12">
             {socialLinks.map((link) => (
               <a
@@ -42,7 +40,7 @@ export function Footer() {
                 aria-label={`Visitar ${link.name}`}
               >
                 <Image
-                  src={link.icon}
+                  src={link.icon || "/placeholder.svg"}
                   alt={`${link.name} icon`}
                   width={64}
                   height={64}
@@ -59,4 +57,3 @@ export function Footer() {
     </footer>
   )
 }
-

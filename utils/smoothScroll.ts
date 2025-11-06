@@ -5,4 +5,3 @@ export function smoothScroll(e: React.MouseEvent<HTMLAnchorElement>, id: string)
     element.scrollIntoView({ behavior: 'smooth' })
   }
 }
-

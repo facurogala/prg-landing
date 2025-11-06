@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "PRG Coaching",
+  "description": "Coach online de powerlifting en Argentina. Entrenamiento personalizado para sentadilla, peso muerto y press de banca. Campeón nacional con experiencia entrenando atletas de élite.",
+  "url": "https://prg-coaching.vercel.app",
+  "telephone": "+54-11-3932-4671",
+  "email": "info@prgcoaching.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AR",
+    "addressRegion": "Buenos Aires",
+    "addressLocality": "Argentina"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-34.6118",
+    "longitude": "-58.3960"
+  },
+  "openingHours": ["Mo-Su 09:00-21:00"],
+  "serviceArea": {
+    "@type": "Country",
+    "name": "Argentina"
+  },
+  "priceRange": "$$",
+  "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PRG%20SOMBRA-UbIM971gA3xHOoWcFHCQcocP85LIuX.png",
+  "logo": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/prg%20logo%20verde-kT7ktxPRR3QYoppiTDkxTkv5U6qEnW.png",
+  "sameAs": [
+    "https://www.instagram.com/faccugram_gordogoodlifter/",
+    "https://www.youtube.com/@prgenerator",
+    "https://www.openpowerlifting.org/u/facundocataldorogala"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Coaching de Powerlifting",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Coaching Online de Powerlifting",
+          "description": "Entrenamiento personalizado de powerlifting con seguimiento online, análisis de video y comunicación directa por WhatsApp"
+        },
+        "price": "25000",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Preparación para Competencias",
+          "description": "Preparación específica para competencias de powerlifting con periodización y estrategia de competencia"
+        },
+        "availability": "https://schema.org/InStock"
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Martín González"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Con PRG logré mi primer récord provincial. Su metodología y seguimiento constante me llevaron de 450kg a 520kg de total en 8 meses. El mejor coach de powerlifting de Argentina."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -19,14 +19,13 @@ export function AboutSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/prg%20out-19xQcj1l8OHK8UgGnmqxPF4Fwpkgro.png"
+                src="/images/design-mode/prg%20out.png"
                 alt="PRG Coaching - Powerlifting training"
                 fill
                 className="object-cover object-center rounded-lg"
                 sizes="(max-width: 1023px) 100vw, 50vw"
                 priority
               />
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div> */}
             </motion.div>
             {/* Contenido a la derecha */}
             <motion.div
@@ -36,12 +35,11 @@ export function AboutSection() {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#DBFF00] mb-6">
-                SOBRE MI
-              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#DBFF00] mb-6">SOBRE MI</h2>
               <div className="space-y-4 text-gray-300">
                 <p className="text-base">
-                  Soy powerlifter, coach y estudiante avanzado de educación física y kinesiología. Mi pasión por el deporte y el rendimiento humano me ha llevado a dedicar mi vida al powerlifting.
+                  Soy powerlifter, coach y estudiante avanzado de educación física y kinesiología. Mi pasión por el
+                  deporte y el rendimiento humano me ha llevado a dedicar mi vida al powerlifting.
                 </p>
                 <div className="space-y-4">
                   <h3 className="text-xl font-bold text-white">LOGROS PERSONALES</h3>
@@ -56,7 +54,7 @@ export function AboutSection() {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-[#DBFF00] rounded-full mr-2"></span>
-                      Metas: 160kg de banco y 300kg de despegue
+                      Metas: 180kg de banco y 300kg de despegue
                     </li>
                   </ul>
                 </div>
@@ -78,7 +76,8 @@ export function AboutSection() {
                   </ul>
                 </div>
                 <p className="text-base">
-                  Cada tanto jugando CS y ocasionalmente hago streams, conectando con la comunidad del powerlifting y más allá.
+                  Cada tanto jugando CS y ocasionalmente hago streams, conectando con la comunidad del powerlifting y
+                  más allá.
                 </p>
               </div>
             </motion.div>
@@ -88,4 +87,3 @@ export function AboutSection() {
     </div>
   )
 }
-

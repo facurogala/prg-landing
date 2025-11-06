@@ -19,4 +19,3 @@ const MotionWrapper: React.FC<MotionWrapperProps> = ({ children }) => {
 }
 
 export default MotionWrapper
-

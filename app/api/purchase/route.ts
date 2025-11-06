@@ -34,4 +34,3 @@ Una vez realizada la transferencia, envíanos el comprobante por este medio.
     whatsappLink: whatsappLink
   });
 }
-
