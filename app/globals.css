@@ -2,49 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 84 100% 50%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 84 100% 50%;
-    --accent-foreground: 0 0% 0%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 84 100% 50%;
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-black text-white;
-    font-family: var(--font-roboto), sans-serif;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-bebas-neue), sans-serif;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -59,6 +16,15 @@
 .fade-in {
   animation: fadeIn 0.5s ease-out forwards;
   opacity: 0;
+}
+
+body {
+  @apply text-white bg-black;
+  font-family: var(--font-roboto), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bebas-neue), sans-serif;
 }
 
 .cssbuttons-io {
@@ -82,7 +48,7 @@
 
 .cssbuttons-io:hover {
   letter-spacing: 3px;
-  background-color: #dbff00;
+  background-color: #DBFF00;
   color: black;
   box-shadow: rgb(219 255 0 / 30%) 0px 7px 29px 0px;
   transform: scale(1.05);
@@ -90,7 +56,7 @@
 
 .cssbuttons-io:active {
   letter-spacing: 3px;
-  background-color: #dbff00;
+  background-color: #DBFF00;
   color: black;
   box-shadow: rgb(219 255 0 / 30%) 0px 0px 0px 0px;
   transform: scale(1.05) translateY(10px);

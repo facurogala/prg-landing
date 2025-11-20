@@ -20,7 +20,7 @@ export function AboutSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="/images/design-mode/prg-out.png"
+                  src="/images/design-mode/prg-out.png"
                 alt="PRG Coaching - Powerlifting training"
                 fill
                 className="object-cover object-center rounded-lg"

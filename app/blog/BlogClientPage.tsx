@@ -5,21 +5,10 @@ import Link from "next/link"
 
 const blogPosts = [
   {
-    id: 2,
-    title: "Leverage: Capitalizar PRs y Hacer Singles un Hábito",
-    excerpt:
-      "No sobrepensar ni sobre festejar kg nuevos. Aprende a hacer de los singles pesados un hábito cotidiano en lugar de un evento anual.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yfyfaUP7z1lIsBtByZLtpLaZnLU1Sq.png",
-    date: "2025-01-15",
-    author: "PRG Coaching",
-    category: "Entrenamiento",
-    slug: "leverage-capitalizar-prs-singles-habito-powerlifting",
-    keywords: ["singles powerlifting", "PRs powerlifting", "entrenamiento pesado", "leverage powerlifting"],
-  },
-  {
     id: 1,
     title: "Sentadilla: Starter pack 2025",
-    excerpt: "Perfeccionar tu sentadilla, corregir errores comunes y aumentar la fuerza máxima en powerlifting.",
+    excerpt:
+      "Perfeccionar tu sentadilla, corregir errores comunes y aumentar la fuerza máxima en powerlifting.",
     image: "/images/squat-technique-2025.png",
     date: "2025-06-08",
     author: "PRG Coaching",
