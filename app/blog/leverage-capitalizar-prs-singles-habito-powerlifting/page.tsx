@@ -20,7 +20,7 @@ export default function LeverageBlogPostPage() {
 
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Imagen destacada */}
-        <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+        <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden" style={{ position: 'relative' }}>
           <Image
             src="/images/design-mode/image.png"
             alt="Leverage en powerlifting - Singles pesados como hábito"

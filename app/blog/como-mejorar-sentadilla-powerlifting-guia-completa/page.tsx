@@ -21,7 +21,7 @@ export default function BlogPostPage() {
 
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Imagen destacada */}
-        <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+        <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden" style={{ position: 'relative' }}>
           <Image
             src="/images/squat-technique-2025.png"
             alt="Técnica de sentadilla en powerlifting"

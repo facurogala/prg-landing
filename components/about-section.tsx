@@ -13,13 +13,14 @@ export function AboutSection() {
             {/* Imagen a la izquierda */}
             <motion.div
               className="relative w-full lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] mb-4 lg:mb-0"
+              style={{ position: 'relative' }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
               <Image
-                src="/images/design-mode/prg%20out.png"
+                src="/images/design-mode/prg-out.png"
                 alt="PRG Coaching - Powerlifting training"
                 fill
                 className="object-cover object-center rounded-lg"
