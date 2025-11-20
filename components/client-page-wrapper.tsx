@@ -1,6 +1,4 @@
 "use client"
-
-import dynamic from "next/dynamic"
 import Image from "next/image"
 import { VideoCarousel } from "@/components/video-carousel"
 import { MobileMenu } from "@/components/mobile-menu"
@@ -16,10 +14,6 @@ import { BlogSection } from "@/components/blog-section"
 import { FAQSection } from "@/components/faq-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { InternalLinksSection } from "@/components/internal-links"
-
-const MotionWrapper = dynamic(() => import("@/components/MotionWrapper"), {
-  ssr: false,
-})
 
 const navigationItems = [
   { href: "#sobre-mi", label: "Sobre Mi" },
@@ -45,7 +39,7 @@ export function ClientPageWrapper() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Image
-                src="/images/design-mode/prg%20logo%20verde.png"
+                src="/images/prg-20logo-20verde.png"
                 alt="PRG Coaching - Logo del Coach de Powerlifting Online en Argentina"
                 width={80}
                 height={50}
@@ -62,7 +56,7 @@ export function ClientPageWrapper() {
       <section className="relative h-screen flex items-center pb-8">
         <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/PRG%20SOMBRA.png"
+            src="/images/prg-20sombra.png"
             alt="PRG Coaching - Entrenador de Powerlifting Online en Argentina especializado en sentadilla, peso muerto y press de banca"
             fill
             className="object-cover object-top"
@@ -73,7 +67,7 @@ export function ClientPageWrapper() {
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 z-20 flex flex-col items-center justify-center text-center">
-          <MotionWrapper>
+          <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4">
               Coaching <span className="text-[#DBFF00]">online</span> de Powerlifting
             </h1>
@@ -89,7 +83,7 @@ export function ClientPageWrapper() {
                 Solicitar Coaching de Powerlifting
               </GlowButton>
             </div>
-          </MotionWrapper>
+          </div>
         </div>
       </section>
 
