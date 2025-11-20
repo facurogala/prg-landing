@@ -45,7 +45,7 @@ export function ClientPageWrapper() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Image
-                src="/images/design-mode/prg-logo-verde.png"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/prg%20logo%20verde-kT7ktxPRR3QYoppiTDkxTkv5U6qEnW.png"
                 alt="PRG Coaching - Logo del Coach de Powerlifting Online en Argentina"
                 width={80}
                 height={50}
@@ -60,9 +60,9 @@ export function ClientPageWrapper() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center pb-8">
-        <div className="absolute inset-0" style={{ position: 'absolute' }}>
+        <div className="absolute inset-0">
           <Image
-            src="/images/design-mode/prg-sombra.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PRG%20SOMBRA-UbIM971gA3xHOoWcFHCQcocP85LIuX.png"
             alt="PRG Coaching - Entrenador de Powerlifting Online en Argentina especializado en sentadilla, peso muerto y press de banca"
             fill
             className="object-cover object-top"
