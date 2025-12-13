@@ -47,7 +47,7 @@ export function BlogSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="relative h-48" style={{ position: 'relative' }}>
+                <div className="relative h-48">
                   <Image
                     src={post.image || "/placeholder.svg?height=192&width=384"}
                     alt={post.title}

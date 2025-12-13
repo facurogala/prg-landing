@@ -77,7 +77,7 @@ export default function BlogClientPage() {
               <article key={post.id} className="border-b border-white/10 pb-12 last:border-0">
                 <Link href={`/blog/${post.slug}`} className="group">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="relative h-60 md:h-full rounded-xl overflow-hidden" style={{ position: 'relative' }}>
+                    <div className="relative h-60 md:h-full rounded-xl overflow-hidden">
                       <Image
                         src={post.image || "/placeholder.svg?height=240&width=320"}
                         alt={post.title}

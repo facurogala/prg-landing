@@ -111,7 +111,7 @@ export function TShirtStore() {
             >
               <Card className="bg-black backdrop-blur-md border border-white/10 hover:border-[#DBFF00]/30 transition-all duration-300 flex flex-col h-full">
                 <CardHeader className="p-0">
-                  <div className="relative w-full pt-[70%]" style={{ position: 'relative' }}>
+                  <div className="relative w-full pt-[70%]">
                     <Image
                       src={tshirt.image || "/placeholder.svg"}
                       alt={tshirt.name}
