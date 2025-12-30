@@ -14,13 +14,10 @@ export const GlowButton: React.FC<GlowButtonProps> = ({ children, onClick, href,
   // Si `href` está presente, usamos `next/link` para navegación
   if (href) {
     return (
-      <Link
-        href={href}
-        className={`cssbuttons-io ${className}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span>{children}</span>
+      <Link href={href} passHref>
+        <a className={`cssbuttons-io ${className}`} target="_blank" rel="noopener noreferrer">
+          <span>{children}</span>
+        </a>
       </Link>
     );
   }
