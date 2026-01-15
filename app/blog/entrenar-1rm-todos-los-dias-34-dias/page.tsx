@@ -42,7 +42,7 @@ export default function BlogPostPage() {
         </h1>
 
         <h2 className="text-xl text-gray-300 mb-8">
-          Ganamos un 29% de fuerza en un mes, pero a qué costo. Análisis profundo del estudio de Cox et al.
+          Ganamos un 29.23% de fuerza en un mes en sujetos físicamente activos no especializados, pero a qué costo. Análisis profundo del estudio de Cox et al.
         </h2>
 
         <div className="prose prose-lg prose-invert max-w-none">
@@ -59,10 +59,15 @@ export default function BlogPostPage() {
             sus implicancias prácticas.
           </p>
 
+          <p className="text-sm text-gray-400 mb-6">
+            Es clave aclarar que los participantes no eran powerlifters entrenados; eran físicamente activos y no especializados (n=7),
+            por lo que los resultados tienen una aplicabilidad limitada a poblaciones entrenadas.
+          </p>
+
           <h3 className="text-xl font-bold text-[#DBFF00] mt-8 mb-4">1. Resultados principales: Ganancias "de novato" aceleradas</h3>
           <p>
             Desde un punto de vista estrictamente de rendimiento, los efectos fueron notables: los participantes presentaron
-            una mejora media de aproximadamente <strong>+29% en el 1RM</strong> tras el ciclo de 34 días.
+              una mejora media de aproximadamente <strong>+29.23% en el 1RM</strong> tras el ciclo de 34 días (media de la muestra de 7 participantes; típica de sujetos no especializados).
           </p>
 
           <ul>
@@ -71,8 +76,7 @@ export default function BlogPostPage() {
               de un mes.
             </li>
             <li>
-              Contexto de la muestra: a diferencia del estudio de 2016 con powerlifters de élite, estos sujetos eran
-              "físicamente activos" pero no especializados, lo que explica en parte el alto porcentaje observado.
+              Contexto de la muestra: a diferencia del estudio de 2016 con powerlifters de élite, estos sujetos eran "físicamente activos" pero no especializados, lo que explica en parte el alto porcentaje observado.
             </li>
             <li>
               Rapidez: los cambios se observaron en cuestión de semanas, lo que sugiere una contribución importante de la
@@ -93,7 +97,7 @@ export default function BlogPostPage() {
           </ul>
 
           <p>
-            El costo real: realizar cinco triples al 85% después de un máximo, todos los días, fue el principal factor del
+            El costo real: realizar cinco triples al 85% después de un máximo, todos los días, probablemente fue el principal factor del
             desgaste estructural observado.
           </p>
 
@@ -101,15 +105,26 @@ export default function BlogPostPage() {
             <li>Molestias articulares: el 43% de los sujetos reportó dolor significativo que obligó a modificar o saltar
               entrenamientos (hombros y tríceps principalmente).</li>
             <li>Fatiga sistémica: la acumulación de estrés hizo que el rendimiento fuese variable y la recuperación insuficiente.</li>
-            <li>Insostenibilidad: la evidencia sugiere que, aunque el SNC toleró la frecuencia, los tendones y articulaciones no.</li>
+            <li>Insostenibilidad: la evidencia sugiere que, aunque el rendimiento neuromuscular toleró la frecuencia, los tendones y articulaciones no.</li>
           </ul>
 
           <h3 className="text-xl font-bold text-[#DBFF00] mt-8 mb-4">3. Variables de confusión: Suplementación</h3>
           <p>
             Un elemento importante del diseño fue la administración diaria de creatina y cafeína (pre-workout) a todos los
             participantes durante los 34 días. Esto plantea la duda razonable sobre cuánto de la mejora se debe al protocolo
-            y cuánto a la intervención nutricional en sujetos previamente no suplementados.
+            y cuánto a la intervención nutricional; si bien creatina y cafeína no explican por sí solas un aumento de esta magnitud,
+            probablemente amplificaron el rendimiento diario y la tolerancia al estrés.
           </p>
+
+            <div className="bg-white/5 border border-white/10 rounded-xl p-4 mb-8">
+              <h4 className="font-bold text-[#DBFF00] mb-2">Limitaciones del estudio</h4>
+              <ul className="text-sm text-gray-300 list-inside">
+                <li>Muestra muy reducida: n = 7 (3 hombres, 4 mujeres), lo que limita la generalización de resultados.</li>
+                <li>No hubo grupo control, por lo que es difícil atribuir cambios exclusivamente al protocolo.</li>
+                <li>Todos los participantes consumieron creatina y cafeína durante el estudio.</li>
+                <li>La mayoría reportó molestias/dolor, lo que cuestiona la sostenibilidad.</li>
+              </ul>
+            </div>
 
           <h3 className="text-xl font-bold text-[#DBFF00] mt-8 mb-4">4. Aplicación práctica para tu entrenamiento</h3>
           <p>
