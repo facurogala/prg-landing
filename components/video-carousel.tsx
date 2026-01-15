@@ -39,6 +39,22 @@ const videos = [
     id: "Zde7WQ297h8",
     title: "Julio - Fin de bloque con mas 66kg",
   },
+  {
+    id: "mcJBnFg8Qok",
+    title: "Bench Session - 1RM Daily Study Clips",
+  },
+  {
+    id: "R4S761hrLZY",
+    title: "Press Banca - Técnica y Puntos Clave",
+  },
+  {
+    id: "00djplFZejc",
+    title: "Entrenamiento - Serie de Banca",
+  },
+  {
+    id: "j5yzLPbr79k",
+    title: "Spotting y Seguridad en Press Banca",
+  },
 ]
 
 export function VideoCarousel() {

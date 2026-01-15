@@ -16,6 +16,17 @@ const blogPosts = [
     slug: "como-mejorar-sentadilla-powerlifting-guia-completa",
     keywords: ["sentadilla powerlifting", "técnica sentadilla", "mejorar sentadilla", "powerlifting Argentina"],
   },
+  {
+    id: 2,
+    title: "¿Entrenar el 1RM Todos los Días? La Brutal Verdad del Estudio de los 34 Días (2025)",
+    excerpt: "Analizamos el estudio de Cox et al. (2025): +29% de fuerza en 34 días entrenando 1RM diario, pero a qué costo.",
+    image: "/images/blog/entrenar-1rm-todos-los-dias-34-dias/1rm-daily-2.png",
+    date: "2025-02-15",
+    author: "PRG Coaching",
+    category: "Investigación",
+    slug: "entrenar-1rm-todos-los-dias-34-dias",
+    keywords: ["1RM diario", "press banca", "Cox 2025", "frecuencia"],
+  },
 ]
 
 export default function BlogClientPage() {
@@ -32,10 +43,12 @@ export default function BlogClientPage() {
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Blog</h1>
-          <p className="text-xl text-gray-300 mb-12">
-            Estrategias de competencia, periodización, nutrición, variantes, evidencia, Etc.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 md:mb-0">Blog</h1>
+            <p className="text-xl text-gray-300 max-w-xl">
+              Estrategias de competencia, periodización, nutrición, variantes, evidencia, Etc.
+            </p>
+          </div>
 
           {/* Categorías */}
           <div className="flex flex-wrap gap-4 mb-12">
