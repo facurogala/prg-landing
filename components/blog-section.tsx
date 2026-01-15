@@ -36,7 +36,10 @@ const blogPosts = [
 
 export function BlogSection() {
   const autoplay = useRef(Autoplay({ delay: 4500, stopOnInteraction: false }))
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start", skipSnaps: false }, [autoplay.current])
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: "start", skipSnaps: false, containScroll: "keepSnaps", slidesToScroll: 1 },
+    [autoplay.current],
+  )
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -64,11 +67,11 @@ export function BlogSection() {
 
         <div className="relative max-w-6xl mx-auto">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-3 md:gap-5 justify-start pl-1 md:pl-2">
               {blogPosts.map((post) => (
                 <div
                   key={post.id}
-                  className="flex-[0_0_90%] md:flex-[0_0_45%] lg:flex-[0_0_33.333%] min-w-0"
+                  className="flex-[0_0_88%] sm:flex-[0_0_78%] md:flex-[0_0_55%] lg:flex-[0_0_33.333%] min-w-0"
                 >
                   <motion.article
                     className="bg-black/50 rounded-lg overflow-hidden border border-white/10 hover:border-[#DBFF00]/30 transition-all duration-300"

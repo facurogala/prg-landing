@@ -59,10 +59,7 @@ export default function BlogPostPage() {
             sus implicancias prácticas.
           </p>
 
-          <p className="text-sm text-gray-400 mb-6">
-            Es clave aclarar que los participantes no eran powerlifters entrenados; eran físicamente activos y no especializados (n=7),
-            por lo que los resultados tienen una aplicabilidad limitada a poblaciones entrenadas.
-          </p>
+ 
 
           <h3 className="text-xl font-bold text-[#DBFF00] mt-8 mb-4">1. Resultados principales: Ganancias "de novato" aceleradas</h3>
           <p>
