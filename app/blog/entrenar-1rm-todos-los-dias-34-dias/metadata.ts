@@ -1,13 +1,13 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "¿Entrenar el 1RM Todos los Días? La Brutal Verdad del Estudio de los 34 Días (2025)",
+  title: "¿Entrenar el 1RM Todos los Días? La Desquiciada Verdad del Estudio de los 34 Días (2025)",
   description:
     "Analizamos el estudio de Cox et al. (2025): +29% de fuerza en 34 días entrenando 1RM diario, pero a qué costo para las articulaciones y el tejido conectivo.",
   keywords:
     "1RM diario, entrenamiento de fuerza, press banca, frecuencia, programación, powerlifting, Cox 2025",
   openGraph: {
-    title: "¿Entrenar el 1RM Todos los Días? La Brutal Verdad (2025)",
+    title: "¿Entrenar el 1RM Todos los Días? La Desquiciada Verdad (2025)",
     description:
       "Analizamos el experimento de Cox et al. (2025). Resultado: +29% de fuerza en 34 días, pero con dolor articular y riesgo elevado de lesión.",
     images: [

@@ -18,7 +18,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "¿Entrenar el 1RM Todos los Días? La Brutal Verdad del Estudio de los 34 Días (2025)",
+    title: "¿Entrenar el 1RM Todos los Días? La Desquiciada Verdad del Estudio de los 34 Días (2025)",
     excerpt: "Analizamos el estudio de Cox et al. (2025): +29% de fuerza en 34 días entrenando 1RM diario, pero a qué costo.",
     image: "/images/blog/entrenar-1rm-todos-los-dias-34-dias/1rm-daily-2.png",
     date: "2025-02-15",
