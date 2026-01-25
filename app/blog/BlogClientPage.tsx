@@ -5,6 +5,25 @@ import Link from "next/link"
 
 const blogPosts = [
   {
+    id: 3,
+    title:
+      "¿Qué hace fuerte a un Powerlifter de Élite? Análisis de los factores determinantes en el Press de Banca (2021)",
+    excerpt:
+      "La masa muscular y las proporciones óseas dominan sobre la técnica en atletas nacionales e internacionales. Análisis del estudio de Reya et al. en Eslovenia.",
+    image: "/images/blog/que-hace-fuerte-powerlifter-elite-press-banca-2021/portada.png",
+    date: "2026-01-25",
+    author: "PRG Coaching",
+    category: "Investigación",
+    slug: "que-hace-fuerte-powerlifter-elite-press-banca-2021",
+    keywords: [
+      "press banca",
+      "powerlifting elite",
+      "Reya 2021",
+      "masa muscular",
+      "índice braquial",
+    ],
+  },
+  {
     id: 1,
     title: "Sentadilla: Starter pack 2025",
     excerpt:
