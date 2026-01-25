@@ -129,7 +129,7 @@ export default function BlogPostPage() {
             Entendé tu Antropometría: Si tenés un índice braquial alto (antebrazos largos), tu rango de movimiento va a ser mayor por naturaleza. No es una excusa, pero sí una señal de que necesitás tríceps y deltoides mucho más fuertes para compensar esas palancas.
           </p>
           <p>
-            Sacá el foco de lo visual: No intentes copiar el arco de un levantador de 59 kg si tu estructura es de 105 kg. La técnica tiene que ser eficiente para tu cuerpo. El rendimiento real se construye sobre una base de tejido muscular y capacidad de generar torque.
+            Sacá el foco de lo visual: La técnica tiene que ser eficiente para tu cuerpo. El rendimiento real se construye sobre una base de tejido muscular y capacidad de generar torque.
           </p>
 
           
