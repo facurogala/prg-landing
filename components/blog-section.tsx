@@ -32,6 +32,23 @@ const blogPosts = [
     slug: "entrenar-1rm-todos-los-dias-34-dias",
     keywords: ["1RM diario", "press banca", "Cox 2025", "frecuencia"],
   },
+  {
+    id: 3,
+    title: "¿Qué hace fuerte a un Powerlifter de Élite? Análisis del Press de Banca (2021)",
+    excerpt: "Masa muscular, proporciones óseas y factores neuromusculares que predicen el 1RM en la élite.",
+    image: "/images/blog/que-hace-fuerte-powerlifter-elite-press-banca-2021/portada.png",
+    date: "2026-01-25",
+    author: "PRG Coaching",
+    category: "Investigación",
+    slug: "que-hace-fuerte-powerlifter-elite-press-banca-2021",
+    keywords: [
+      "press de banca 2021",
+      "powerlifting élite",
+      "masa magra",
+      "antropometría",
+      "Reya 2021",
+    ],
+  },
 ]
 
 export function BlogSection() {

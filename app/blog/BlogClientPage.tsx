@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { useSearchParams } from "next/navigation"
 
 const blogPosts = [
   {
@@ -49,6 +50,19 @@ const blogPosts = [
 ]
 
 export default function BlogClientPage() {
+  const searchParams = useSearchParams()
+  const categoriaParam = searchParams?.get("categoria") || ""
+
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+
+  const filteredPosts = categoriaParam
+    ? blogPosts.filter((p) => normalize(p.category) === normalize(categoriaParam))
+    : blogPosts
+
   return (
     <main className="bg-black min-h-screen pt-20">
       {/* Header con navegación de regreso */}
@@ -73,39 +87,44 @@ export default function BlogClientPage() {
           <div className="flex flex-wrap gap-4 mb-12">
             <Link
               href="/blog"
-              className="bg-[#DBFF00] text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#DBFF00]/90 transition-colors"
+              className={
+                "px-4 py-2 rounded-full text-sm font-semibold transition-colors " +
+                (categoriaParam === ""
+                  ? "bg-[#DBFF00] text-black hover:bg-[#DBFF00]/90"
+                  : "bg-black/50 border border-white/10 text-white hover:border-[#DBFF00]/30 hover:text-[#DBFF00]")
+              }
             >
               Todos
             </Link>
-            <Link
-              href="/blog?categoria=tecnica"
-              className="bg-black/50 border border-white/10 text-white px-4 py-2 rounded-full text-sm font-semibold hover:border-[#DBFF00]/30 hover:text-[#DBFF00] transition-colors"
-            >
-              Técnica
-            </Link>
-            <Link
-              href="/blog?categoria=nutricion"
-              className="bg-black/50 border border-white/10 text-white px-4 py-2 rounded-full text-sm font-semibold hover:border-[#DBFF00]/30 hover:text-[#DBFF00] transition-colors"
-            >
-              Nutrición
-            </Link>
-            <Link
-              href="/blog?categoria=competencia"
-              className="bg-black/50 border border-white/10 text-white px-4 py-2 rounded-full text-sm font-semibold hover:border-[#DBFF00]/30 hover:text-[#DBFF00] transition-colors"
-            >
-              Competencia
-            </Link>
-            <Link
-              href="/blog?categoria=entrenamiento"
-              className="bg-black/50 border border-white/10 text-white px-4 py-2 rounded-full text-sm font-semibold hover:border-[#DBFF00]/30 hover:text-[#DBFF00] transition-colors"
-            >
-              Entrenamiento
-            </Link>
+
+            {[
+              ["investigacion", "Investigación"],
+              ["tecnica", "Técnica"],
+              ["nutricion", "Nutrición"],
+              ["competencia", "Competencia"],
+              ["entrenamiento", "Entrenamiento"],
+            ].map(([param, label]) => {
+              const active = normalize(categoriaParam) === String(param)
+              return (
+                <Link
+                  key={String(param)}
+                  href={`/blog?categoria=${String(param)}`}
+                  className={
+                    "px-4 py-2 rounded-full text-sm font-semibold transition-colors " +
+                    (active
+                      ? "bg-[#DBFF00] text-black hover:bg-[#DBFF00]/90"
+                      : "bg-black/50 border border-white/10 text-white hover:border-[#DBFF00]/30 hover:text-[#DBFF00]")
+                  }
+                >
+                  {String(label)}
+                </Link>
+              )
+            })}
           </div>
 
           {/* Artículos */}
           <div className="space-y-12">
-            {blogPosts.map((post) => (
+            {filteredPosts.map((post) => (
               <article key={post.id} className="border-b border-white/10 pb-12 last:border-0">
                 <Link href={`/blog/${post.slug}`} className="group">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
