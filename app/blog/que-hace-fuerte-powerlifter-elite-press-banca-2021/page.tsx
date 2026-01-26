@@ -1,5 +1,4 @@
-Blog
-Estrategias de competencia, periodización, nutrición, variantes, evidencia, Etc."use client"
+"use client"
 
 import Image from "next/image"
 import Link from "next/link"
